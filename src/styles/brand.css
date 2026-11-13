@@ -1,0 +1,14 @@
+/* Brand-level adjustments on top of land.css (kept separate so land.css stays the reference stylesheet). */
+/* One language, no switch: the header's call to action keeps to the right edge. */
+.bar > .buy-link { margin-left: auto; }
+/* The live signal preview takes the place of the reference's video. */
+.pv .pv-c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+/* Product screens in the risks frame. */
+.fm img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* The owl before the wordmark in the header. */
+.mark-owl { width: 1.05em; height: 1.05em; margin-right: .28em; vertical-align: -.16em; }
+/* Drawn graphics in the places the reference used recordings. */
+.fm .fm-c { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+.listen-win .listen-c { display: block; width: 100%; aspect-ratio: 1800 / 1161; box-shadow: 0 0 0 1px rgba(236, 232, 220, .18), 0 28px 70px rgba(0, 0, 0, .55); }
+/* The tour's boards are canvases in place of the reference's window screenshots. */
+.st canvas.base { position: absolute; left: 0; top: 0; width: 100%; height: 100%; display: block; }

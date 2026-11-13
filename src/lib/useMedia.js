@@ -1,0 +1,9 @@
+import { useSyncExternalStore } from 'react';
+
+export function useMedia(query) {
+  return useSyncExternalStore(
+    (cb) => { const m = matchMedia(query); m.addEventListener('change', cb); return () => m.removeEventListener('change', cb); },
+    () => matchMedia(query).matches,
+    () => false,
+  );
+}

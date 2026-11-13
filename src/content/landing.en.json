@@ -1,0 +1,954 @@
+{
+  "lang": "en",
+  "defaultCurrency": "USD",
+  "ids": {
+    "top": "top",
+    "hear": "about",
+    "sheet": "map",
+    "looks": "signals",
+    "out": "wrong",
+    "demo": "try",
+    "app": "how",
+    "listen": "defender",
+    "price": "products",
+    "faq": "faq",
+    "end": "contact"
+  },
+  "meta": {
+    "title": "Threat Owls: security for a world run by AI agents",
+    "description": "Threat Owls shows you where you’re exposed, ranks what to fix first, and keeps your AI agents inside the lines.",
+    "ogLocale": "en_US",
+    "ld": [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Threat Owls",
+        "url": "https://www.threatowls.com",
+        "email": "contact@threatowls.com",
+        "telephone": "+91 9445441023"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is it available now?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We are working with a few design partners first. Write to us and we will tell you exactly where things stand."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is an “AI agent”?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An AI assistant that does more than answer questions. It takes actions: reading email, opening files, calling other software, even working with other AIs. The more it can do, the more there is to protect."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do we need a security team to use it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Reports and alerts are written in plain language, and every action is explained. If you do have a security team, it plugs into the tools they already use."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will it slow down or break our AI tools?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We start by only watching, so nothing changes. Blocking is switched on later, only for the risky actions you choose, and any action can be undone."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does it replace our existing security tools?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. It works alongside them, adds the missing view of AI agents, and shares what it finds with the systems you already run."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will you read our private conversations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "By default we record who did what, not the content. Capturing the content of prompts is optional, limited and under your control."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can AI make the final security decisions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. AI helps explain and suggest. Allowing or blocking is done by clear rules you approve, so results are predictable and can be reviewed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you rank what to fix?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Every finding gets one of four verdicts: Fix now (evidence supports urgent action), Review (material, but needs a human look), Deprioritize (lower risk, with the reasons kept) or Not enough data (we say so instead of guessing). A quiet sensor means unknown, not safe."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "skip": "Skip to content",
+  "otherLang": null,
+  "header": {
+    "buy": "Contact us"
+  },
+  "transport": {
+    "aria": "Chapters of the page",
+    "chaptersVh": ": Chapters",
+    "chapters": [
+      {
+        "id": "top",
+        "label": "Start"
+      },
+      {
+        "id": "about",
+        "label": "What we do"
+      },
+      {
+        "id": "map",
+        "label": "The map"
+      },
+      {
+        "id": "signals",
+        "label": "Signals"
+      },
+      {
+        "id": "wrong",
+        "label": "The risks"
+      },
+      {
+        "id": "try",
+        "label": "Scan your site"
+      },
+      {
+        "id": "how",
+        "label": "How it works"
+      },
+      {
+        "id": "defender",
+        "label": "AI Defender"
+      },
+      {
+        "id": "products",
+        "label": "Products"
+      },
+      {
+        "id": "faq",
+        "label": "Questions"
+      },
+      {
+        "id": "contact",
+        "label": "Contact"
+      }
+    ],
+    "sound": "Sound",
+    "soundAria": "Sound of the live scan",
+    "pause": "Pause",
+    "pauseAria": "Stop the motion on the page",
+    "timeAll": "1:41"
+  },
+  "hero": {
+    "lines": [
+      "We keep AI agents",
+      "inside the lines"
+    ],
+    "lead": "Threat Owls shows you where you are exposed, tells you what to fix first, and watches your AI agents so you can stop one the moment it goes off track.",
+    "buy": "Contact us",
+    "try": "Scan your site",
+    "tryHref": "#try",
+    "pcNote": "We are building this with a small group of design partners before opening it up more widely.",
+    "wallNote": "24 Threat Owls signals from one scan, drawn live as you watch. Illustrative data.",
+    "canvasAria": "The activity of one scan as bars. Inside them, 24 live Threat Owls signals.",
+    "readout": [
+      "312 ASSETS",
+      "47 AGENTS",
+      "9 OPEN PATHS"
+    ],
+    "soundOn": "Turn the sound on",
+    "soundOff": "Turn the sound off"
+  },
+  "hear": {
+    "tokens": [
+      {
+        "w": "In"
+      },
+      {
+        "w": "one"
+      },
+      {
+        "w": "scan,"
+      },
+      {
+        "w": "Threat"
+      },
+      {
+        "w": "Owls"
+      },
+      {
+        "w": "finds"
+      },
+      {
+        "tile": "w1",
+        "title": "The Exposure signal paints every system it finds"
+      },
+      {
+        "val": [
+          "312",
+          "assets,"
+        ]
+      },
+      {
+        "tile": "w11",
+        "title": "The Keys signal marks the credentials in use"
+      },
+      {
+        "val": [
+          "47",
+          "AI",
+          "agents,"
+        ]
+      },
+      {
+        "tile": "w10",
+        "title": "The Gauges signal: risk and exploit likelihood"
+      },
+      {
+        "val": [
+          "9",
+          "open",
+          "paths,"
+        ]
+      },
+      {
+        "tile": "w6",
+        "title": "The Audit signal writes every agent action as a trace"
+      },
+      {
+        "w": "the"
+      },
+      {
+        "w": "tools,"
+      },
+      {
+        "w": "data"
+      },
+      {
+        "w": "and"
+      },
+      {
+        "w": "logins"
+      },
+      {
+        "w": "each"
+      },
+      {
+        "w": "agent"
+      },
+      {
+        "w": "can"
+      },
+      {
+        "w": "reach,"
+      },
+      {
+        "w": "and"
+      },
+      {
+        "w": "which"
+      },
+      {
+        "w": "doors"
+      },
+      {
+        "w": "are"
+      },
+      {
+        "w": "really"
+      },
+      {
+        "w": "unlocked."
+      }
+    ],
+    "p": "Think of us as a security guard for your AI workers. Businesses now let AI assistants answer customers, read email, pull reports and update records. They are fast and useful, but they can be tricked, and most security tools were never built to watch them."
+  },
+  "sheet": {
+    "h2": "The map draws itself while we scan",
+    "p": "We pull what your scanners, cloud, accounts and AI tools report into one map, then rank problems by what an attacker could really reach. Keep scrolling and the map completes.",
+    "pctLabel": "mapped",
+    "aria": "An exposure map building over one scan, from the network to the agents.",
+    "posterAlt": "The finished exposure map of one scan.",
+    "capTitle": "The finished map",
+    "capText": "A short list of what to fix first, with the reason in plain English. This is our CTEM product."
+  },
+  "pens": {
+    "h3": "Eleven views, one environment",
+    "p": "Every page below is drawn from the same scan. One view paints exposure, another writes the timeline of agent actions, a third rings out the blast radius of one stolen login. Like checking every door and window, then telling you which ones are actually unlocked.",
+    "items": [
+      {
+        "name": "Exposure",
+        "sub": "Every system painted by how exposed it is"
+      },
+      {
+        "name": "Timeline",
+        "sub": "Agent actions written row after row"
+      },
+      {
+        "name": "Surface",
+        "sub": "The attack surface, one layer per network"
+      },
+      {
+        "name": "Blast radius",
+        "sub": "Rings out from one stolen login"
+      },
+      {
+        "name": "Audit",
+        "sub": "Eight agents logged on one chart"
+      },
+      {
+        "name": "Shadow AI",
+        "sub": "Tools nobody approved, mirrored against the ones you did"
+      },
+      {
+        "name": "Reach",
+        "sub": "Everything one agent can touch, as rays"
+      },
+      {
+        "name": "Priority lanes",
+        "sub": "Seven lanes, from fix now to not enough data"
+      },
+      {
+        "name": "Incidents",
+        "sub": "Every alert drops a ring on the timeline"
+      },
+      {
+        "name": "Attack path",
+        "sub": "Pins on the weak spots; one thread follows the attacker’s route"
+      },
+      {
+        "name": "Trust mesh",
+        "sub": "Six trust zones netted together; the riskiest knotted nearly black"
+      }
+    ]
+  },
+  "looks": {
+    "big": "57",
+    "h2": "Fifty-seven signals",
+    "p": "Five groups. Map shows what you run. Measure scores the risk the way auditors do. Watch follows agents as they work. Defend applies the rules you approve. Respond stops the wrong move. Pick a name and its sheet runs live.",
+    "playing": "Live",
+    "more": "Illustrative signals. In the product every view is drawn from your own systems, identities, tools and agent workflows.",
+    "groups": [
+      {
+        "name": "Map",
+        "items": [
+          {
+            "id": "sheet-paint",
+            "label": "Exposure",
+            "name": "Map · Exposure",
+            "sub": "Every system painted by how exposed it is"
+          },
+          {
+            "id": "sheet-drum",
+            "label": "Timeline",
+            "name": "Map · Timeline",
+            "sub": "Agent actions written row after row"
+          },
+          {
+            "id": "sheet-ridge",
+            "label": "Surface",
+            "name": "Map · Surface",
+            "sub": "The attack surface, one layer per network"
+          },
+          {
+            "id": "sheet-disc",
+            "label": "Blast radius",
+            "name": "Map · Blast radius",
+            "sub": "Rings out from one stolen login"
+          },
+          {
+            "id": "sheet-polygraph",
+            "label": "Audit",
+            "name": "Map · Audit",
+            "sub": "Eight agents logged on one chart"
+          },
+          {
+            "id": "sheet-hatch",
+            "label": "Shadow AI",
+            "name": "Map · Shadow AI",
+            "sub": "Tools nobody approved, mirrored against the ones you did"
+          },
+          {
+            "id": "sheet-corona",
+            "label": "Reach",
+            "name": "Map · Reach",
+            "sub": "Everything one agent can touch, as rays"
+          },
+          {
+            "id": "sheet-gel",
+            "label": "Priority lanes",
+            "name": "Map · Priority lanes",
+            "sub": "Seven lanes, from fix now to not enough data"
+          },
+          {
+            "id": "sheet-rings",
+            "label": "Incidents",
+            "name": "Map · Incidents",
+            "sub": "Every alert drops a ring on the timeline"
+          },
+          {
+            "id": "sheet-string",
+            "label": "Attack path",
+            "name": "Map · Attack path",
+            "sub": "Pins on the weak spots; one thread follows the attacker’s route"
+          },
+          {
+            "id": "sheet-mesh",
+            "label": "Trust mesh",
+            "name": "Map · Trust mesh",
+            "sub": "Six trust zones netted together; the riskiest knotted nearly black"
+          }
+        ]
+      },
+      {
+        "name": "Measure",
+        "items": [
+          {
+            "id": "scope",
+            "label": "Trace",
+            "name": "Trace",
+            "sub": "One agent’s activity, locked to its own baseline"
+          },
+          {
+            "id": "spectrum",
+            "label": "Spectrum",
+            "name": "Spectrum",
+            "sub": "Risk across every asset, with peak hold"
+          },
+          {
+            "id": "vector",
+            "label": "Balance",
+            "name": "Balance",
+            "sub": "Allowed against denied actions, and how they move together"
+          },
+          {
+            "id": "meters",
+            "label": "Gauges",
+            "name": "Gauges",
+            "sub": "Exposure score and exploit likelihood (EPSS)"
+          },
+          {
+            "id": "sonar",
+            "label": "Sonar",
+            "name": "Sonar",
+            "sub": "A sweep of the network, written to a paper roll"
+          },
+          {
+            "id": "rack",
+            "label": "Console",
+            "name": "Console",
+            "sub": "Everything at once"
+          },
+          {
+            "id": "groove",
+            "label": "Cadence",
+            "name": "Cadence",
+            "sub": "Logins, tool calls and data reads on a one-hour clock"
+          },
+          {
+            "id": "key",
+            "label": "Keys",
+            "name": "Keys",
+            "sub": "The credentials in use now, and who holds them"
+          },
+          {
+            "id": "glide",
+            "label": "Drift",
+            "name": "Drift",
+            "sub": "How an agent’s behaviour slides away from normal"
+          },
+          {
+            "id": "polygraph",
+            "label": "Polygraph",
+            "name": "Polygraph",
+            "sub": "Eight sensors write the scan at once"
+          }
+        ]
+      },
+      {
+        "name": "Watch",
+        "items": [
+          {
+            "id": "plexus",
+            "label": "Plexus",
+            "name": "Plexus",
+            "sub": "Every identity and its links, in five studies; click for the next"
+          },
+          {
+            "id": "flow",
+            "label": "Flow",
+            "name": "Flow",
+            "sub": "Data streaming between your systems"
+          },
+          {
+            "id": "stars",
+            "label": "Constellation",
+            "name": "Constellation",
+            "sub": "Every finding a star; the line joins one attack path"
+          },
+          {
+            "id": "monitor",
+            "label": "Monitor",
+            "name": "Monitor",
+            "sub": "Live events and a block heatmap on an old console"
+          },
+          {
+            "id": "glyph",
+            "label": "Glyph",
+            "name": "Glyph",
+            "sub": "The log stream typed out in characters"
+          },
+          {
+            "id": "lidar",
+            "label": "Lidar",
+            "name": "Lidar",
+            "sub": "Scan lines across the network, receding"
+          },
+          {
+            "id": "blob",
+            "label": "Swarm",
+            "name": "Swarm",
+            "sub": "Six agents pushed by every request: nudge them with the cursor"
+          },
+          {
+            "id": "trajectory",
+            "label": "Trajectory",
+            "name": "Trajectory",
+            "sub": "One agent’s path through tools, data and time"
+          },
+          {
+            "id": "stipple",
+            "label": "Stipple",
+            "name": "Stipple",
+            "sub": "A footprint grown alert by alert"
+          },
+          {
+            "id": "trace",
+            "label": "Trace lines",
+            "name": "Trace lines",
+            "sub": "Every system leaves a line; every alert a curl"
+          },
+          {
+            "id": "score",
+            "label": "Ledger",
+            "name": "Ledger",
+            "sub": "Every action written down, eight to a page"
+          },
+          {
+            "id": "tracker",
+            "label": "Tracker",
+            "name": "Tracker",
+            "sub": "Five agents held in frames: click to follow one"
+          },
+          {
+            "id": "aura",
+            "label": "Aura",
+            "name": "Aura",
+            "sub": "Pulses on every access, changes colour on a denial"
+          }
+        ]
+      },
+      {
+        "name": "Defend",
+        "items": [
+          {
+            "id": "dew",
+            "label": "Dew",
+            "name": "Dew",
+            "sub": "A drop of light for every rule that fires"
+          },
+          {
+            "id": "form",
+            "label": "Field",
+            "name": "Field",
+            "sub": "Alerts as points of pressure; the risk drawn as contours"
+          },
+          {
+            "id": "roots",
+            "label": "Roots",
+            "name": "Roots",
+            "sub": "Permissions as a network of roots, with a key"
+          },
+          {
+            "id": "specimen",
+            "label": "Specimen",
+            "name": "Specimen",
+            "sub": "One agent under study: its identity, tools, data and limits"
+          },
+          {
+            "id": "strata",
+            "label": "Strata",
+            "name": "Strata",
+            "sub": "Six trust levels as discs on one thread; denials burst at the foot"
+          },
+          {
+            "id": "beads",
+            "label": "Beads",
+            "name": "Beads",
+            "sub": "Every approval a bead in the colour of its owner"
+          },
+          {
+            "id": "map",
+            "label": "Exposure map",
+            "name": "Exposure map",
+            "sub": "Your estate as terrain; a cloud wherever something is open"
+          },
+          {
+            "id": "character",
+            "label": "Profile",
+            "name": "Profile",
+            "sub": "Five scales of an agent: where it sits now and where it sat before"
+          },
+          {
+            "id": "pillars",
+            "label": "Pillars",
+            "name": "Pillars",
+            "sub": "Identity, policy, approval and evidence as four fields of colour"
+          },
+          {
+            "id": "fountain",
+            "label": "Fountain",
+            "name": "Fountain",
+            "sub": "Alerts rising as light from the core; denials throw sparks"
+          },
+          {
+            "id": "blocks",
+            "label": "Blocks",
+            "name": "Blocks",
+            "sub": "The whole scan in mirrored blocks, row by row"
+          },
+          {
+            "id": "lens",
+            "label": "Lens",
+            "name": "Lens",
+            "sub": "Findings as lenses, with a plain-English narrator"
+          },
+          {
+            "id": "glyphs",
+            "label": "Emblems",
+            "name": "Emblems",
+            "sub": "Fifteen emblems, one for each control"
+          },
+          {
+            "id": "pegboard",
+            "label": "Pegboard",
+            "name": "Pegboard",
+            "sub": "Eighteen systems as columns of pegs, one row per minute"
+          },
+          {
+            "id": "ink",
+            "label": "Ink",
+            "name": "Ink",
+            "sub": "Blocked actions sprayed as spots, approvals drawn as inked rings"
+          },
+          {
+            "id": "starwords",
+            "label": "Starwords",
+            "name": "Starwords",
+            "sub": "A finding explained word by word, on a sky that warms with the risk"
+          },
+          {
+            "id": "chakra",
+            "label": "Column",
+            "name": "Column",
+            "sub": "Eighteen controls as a column of lights"
+          },
+          {
+            "id": "clusters",
+            "label": "Clusters",
+            "name": "Clusters",
+            "sub": "Numbered risks gathering evidence from the alerts"
+          },
+          {
+            "id": "blot",
+            "label": "Grid",
+            "name": "Grid",
+            "sub": "Every event blotted onto a sixteen-step grid, one hour a row"
+          },
+          {
+            "id": "energy",
+            "label": "Posture",
+            "name": "Posture",
+            "sub": "Exposed, contained, watched, approved, proven, decoyed"
+          },
+          {
+            "id": "figure",
+            "label": "Figure",
+            "name": "Figure",
+            "sub": "A glowing agent: tools its head, data its body, logins its ground"
+          },
+          {
+            "id": "berries",
+            "label": "Berries",
+            "name": "Berries",
+            "sub": "One berry for the strongest alert of every half hour"
+          }
+        ]
+      },
+      {
+        "name": "Respond",
+        "items": [
+          {
+            "id": "crowd",
+            "label": "Responders",
+            "name": "Responders",
+            "sub": "Little guards act on every alert, by rule or by hand"
+          }
+        ]
+      }
+    ],
+    "initial": "specimen"
+  },
+  "out": {
+    "h2": "Your defenses were built for people. Agents are different.",
+    "p": "Agents do not get phished. They obey. They carry logins, read email and files, treat hidden instructions as orders, and never slow down.",
+    "reelSound": "Sound",
+    "formats": [
+      {
+        "ratio": "RISK 01",
+        "title": "The poisoned email",
+        "desc": "A support agent reads a message with hidden text telling it to send out your client list. It obeys, because it cannot tell an instruction from a message.",
+        "aria": "The poisoned email"
+      },
+      {
+        "ratio": "RISK 02",
+        "title": "The over-powered assistant",
+        "desc": "An agent was given admin access “just to get it working.” Trick it once and the attacker has admin access too.",
+        "aria": "The over-powered assistant"
+      },
+      {
+        "ratio": "RISK 03",
+        "title": "The runaway loop",
+        "desc": "An agent gets stuck and repeats an action thousands of times, sending email or changing records, before a person notices.",
+        "aria": "The runaway loop"
+      },
+      {
+        "ratio": "RISK 04",
+        "title": "The tool nobody approved",
+        "desc": "An employee connects a new AI tool to company data. IT never hears about it, so nobody is watching what it can reach.",
+        "aria": "The tool nobody approved"
+      }
+    ]
+  },
+  "app": {
+    "h2": "How it works",
+    "steps": [
+      {
+        "title": "Discover",
+        "text": "We list everything you run: devices, cloud, accounts, and every AI tool and agent, plus what each one can reach."
+      },
+      {
+        "title": "Prioritize",
+        "text": "Instead of thousands of alerts, you get a short list of what to fix first, and why."
+      },
+      {
+        "title": "Protect",
+        "text": "Rules you approve keep AI inside its limits. Risky actions wait for a person. Decoys catch anything suspicious."
+      },
+      {
+        "title": "Prove",
+        "text": "Every action is recorded and explained, so you can show leaders, customers and auditors exactly what happened."
+      }
+    ],
+    "alts": [
+      "Discover: every device, account, cloud service and AI agent on one map, with what each can reach.",
+      "Prioritize: thousands of findings ranked into a short list of what to fix first.",
+      "Protect: agent actions pass rules you approve; risky ones wait for a person, decoys catch the rest.",
+      "Prove: every action recorded, explained and chained, with a monthly report."
+    ]
+  },
+  "listen": {
+    "h2": "We watch your AI while it works",
+    "p": "Each AI agent gets an identity and clear limits. We check what it tries to do, and risky actions wait for a person. Harmless decoy tools that no honest agent would touch act as tripwires: if one is touched, we know something is wrong. This is our AI Defender product.",
+    "fine": "Like a guard who knows who belongs in each room, plus a tripwire in the vault corridor.",
+    "alt": "AI Defender live activity: every agent action, what was allowed, blocked or held for approval."
+  },
+  "privacy": {
+    "h2": "AI helps you think. Rules decide.",
+    "p": "A product that guards AI cannot itself be an unpredictable AI. AI explains findings, spots gaps and drafts policies, always showing its sources. Allow, deny and approval come from tested policy that you can read, replay and roll back."
+  },
+  "price": {
+    "h2": "Two products, one picture of risk",
+    "p": "CTEM finds and ranks what is exposed. AI Defender keeps your agents inside the lines. They share one map: what an agent can reach decides what it may do, and what it actually does flows back into the map.",
+    "sale": "",
+    "currency": "Currency",
+    "life": {
+      "title": "Exposure management",
+      "note": "",
+      "amount": "CTEM",
+      "wasLabel": "",
+      "items": [
+        "Maps everything you run, your AI included",
+        "Ranks what an attacker could really reach",
+        "Follows each fix until it is verified"
+      ],
+      "cta": "Talk to us about CTEM"
+    },
+    "month": {
+      "title": "Runtime control for AI agents",
+      "note": "",
+      "amount": "AI Defender",
+      "wasLabel": "",
+      "items": [
+        "Gives every agent an identity and clear limits",
+        "Risky actions wait for a person",
+        "Decoy tools catch what rules miss"
+      ],
+      "cta": "Talk to us about AI Defender"
+    },
+    "pcLine": "",
+    "payH": "Fits the stack you already run",
+    "pay": [
+      "Your scanners, cloud and identity tools, and your SIEM, EDR and XDR.",
+      "Open standards: MCP, A2A, OpenTelemetry and OCSF.",
+      "Public threat data: CISA KEV, EPSS and NVD."
+    ],
+    "noTgHtml": "",
+    "stepsH": "For anyone who lets AI touch real work",
+    "steps": [
+      {
+        "title": "Business leaders",
+        "text": "Understand your AI risk without the jargon. Clear status, clear reasons, clear next steps."
+      },
+      {
+        "title": "IT and security teams",
+        "text": "Fewer alerts, better priorities, and evidence you can act on, alongside the tools you already own."
+      },
+      {
+        "title": "IT service providers",
+        "text": "Look after many client businesses from one place and hand each one a readable report."
+      },
+      {
+        "title": "Regulated industries",
+        "text": "Finance, healthcare, legal and public sector teams that must show what an AI did and who allowed it."
+      }
+    ],
+    "afterHtml": "You do not need a large security team. <a href=\"#contact\">Tell us what you run</a>"
+  },
+  "faq": {
+    "h2": "Simple answers to common questions.",
+    "items": [
+      {
+        "q": "Is it available now?",
+        "a": "We are working with a few design partners first. Write to us and we will tell you exactly where things stand."
+      },
+      {
+        "q": "What is an “AI agent”?",
+        "a": "An AI assistant that does more than answer questions. It takes actions: reading email, opening files, calling other software, even working with other AIs. The more it can do, the more there is to protect."
+      },
+      {
+        "q": "Do we need a security team to use it?",
+        "a": "No. Reports and alerts are written in plain language, and every action is explained. If you do have a security team, it plugs into the tools they already use."
+      },
+      {
+        "q": "Will it slow down or break our AI tools?",
+        "a": "We start by only watching, so nothing changes. Blocking is switched on later, only for the risky actions you choose, and any action can be undone."
+      },
+      {
+        "q": "Does it replace our existing security tools?",
+        "a": "No. It works alongside them, adds the missing view of AI agents, and shares what it finds with the systems you already run."
+      },
+      {
+        "q": "Will you read our private conversations?",
+        "a": "By default we record who did what, not the content. Capturing the content of prompts is optional, limited and under your control."
+      },
+      {
+        "q": "Can AI make the final security decisions?",
+        "a": "No. AI helps explain and suggest. Allowing or blocking is done by clear rules you approve, so results are predictable and can be reviewed."
+      },
+      {
+        "q": "How do you rank what to fix?",
+        "a": "Every finding gets one of four verdicts: Fix now (evidence supports urgent action), Review (material, but needs a human look), Deprioritize (lower risk, with the reasons kept) or Not enough data (we say so instead of guessing). A quiet sensor means unknown, not safe."
+      }
+    ]
+  },
+  "end": {
+    "h2": "Tell us what your agents can reach.",
+    "buy": "Contact us",
+    "aria": "The whole scan as bars, drawn by Threat Owls signals."
+  },
+  "footer": {
+    "aria": "Footer",
+    "links": [
+      {
+        "href": "mailto:contact@threatowls.com",
+        "label": "contact@threatowls.com"
+      },
+      {
+        "href": "tel:+919445441023",
+        "label": "+91 9445441023"
+      },
+      {
+        "href": "https://www.threatowls.com",
+        "label": "www.threatowls.com"
+      },
+      {
+        "href": "#how",
+        "label": "How it works"
+      },
+      {
+        "href": "#faq",
+        "label": "FAQ"
+      }
+    ],
+    "copy": "© 2026 Threat Owls. Registered in India. CIN: U62010TZ2026PTC038996"
+  },
+  "scan": {
+    "h2": "Scan your site in twenty seconds",
+    "p": "A free outside-in check: the same first look an attacker, or an AI agent, takes at your domain. Email spoofing, HTTPS, security headers, DNS, and the rules you set for AI crawlers, each answered as Fix now, Review or Looks good, with why it matters and what to do.",
+    "label": "Your website address",
+    "placeholder": "yourcompany.com",
+    "button": "Scan",
+    "scanning": "Scanning…",
+    "note": "Passive checks only: public DNS records and a few ordinary page requests. Nothing is attacked or stored.",
+    "example": "threatowls.com",
+    "tryExample": "Try {host}",
+    "badHost": "That does not look like a website address. Try something like yourcompany.com.",
+    "failed": "The scan could not finish. Check your connection and try again.",
+    "live": "Scanning live",
+    "idle": "Waiting for a site",
+    "gradeHint": "Your grade appears here",
+    "idleSteps": [
+      "Resolve the name",
+      "Email: who may send as you (SPF)",
+      "Email: spoofing policy (DMARC)",
+      "DNS: signed records and certificate rules",
+      "Web: HTTPS and headers",
+      "AI: rules for AI crawlers and agents"
+    ],
+    "checking": "checking",
+    "checked": "checked",
+    "fixN": "You have {n} things to fix now",
+    "reviewN": "Nothing urgent. {n} things worth a review.",
+    "clean": "Nothing to fix from the outside.",
+    "resultsLabel": "Scan results",
+    "filterLabel": "Show findings",
+    "all": "All",
+    "why": "Why it matters:",
+    "what": "What to do:",
+    "outro": "This is the outside view of one website. Inside, Threat Owls maps every system, account and AI agent you run, and what each one can reach.",
+    "cta": "Get the full picture",
+    "fix1": "You have 1 thing to fix now",
+    "review1": "Nothing urgent. 1 thing worth a review."
+  }
+}

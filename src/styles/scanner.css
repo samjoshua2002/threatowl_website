@@ -1,0 +1,89 @@
+/* The live site scanner. Same language as the rest of the page: night ground, square corners, the display face for
+   the one big number (here the grade), mono for readings, the signal colour only for what needs action. */
+.ch-scan { padding: clamp(80px, 14svh, 160px) var(--gut) clamp(64px, 10svh, 120px); border-top: 1px solid var(--line-n); }
+.scan-copy { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 24px 48px; align-items: end; margin-bottom: clamp(28px, 5svh, 56px); }
+.scan-copy h2 { font-size: clamp(44px, 7vw, 120px); }
+.scan-copy p { color: var(--mute-n); max-width: 34em; }
+
+.scan-form { display: flex; align-items: stretch; border-bottom: 2px solid var(--ink-n); }
+.scan-form:focus-within { border-color: var(--red); }
+.scan-pre { align-self: center; font: 500 clamp(18px, 2.4vw, 34px)/1 var(--mono); color: var(--mute-n); }
+.scan-form input { flex: 1; min-width: 0; padding: 18px 12px 18px 4px; background: transparent; border: 0; outline: 0; color: var(--ink-n); font: 900 clamp(28px, 4.6vw, 76px)/1 var(--display); font-stretch: 72%; letter-spacing: -.01em; }
+.scan-form input::placeholder { color: rgba(236, 232, 220, .22); }
+.scan-form .btn { align-self: center; min-width: 140px; }
+.scan-form .btn:disabled { opacity: .55; cursor: progress; }
+.scan-hint { margin-top: 14px; font: 400 14px/1.5 var(--text); color: var(--mute-n); }
+.scan-try { background: none; border: 0; padding: 0; color: var(--ink-n); text-decoration: underline; text-underline-offset: .22em; cursor: pointer; font: inherit; }
+.scan-err { color: var(--red); }
+
+.scan-board { display: grid; grid-template-columns: minmax(260px, .9fr) minmax(0, 2fr); gap: 0; margin-top: clamp(32px, 6svh, 64px); border: 1px solid var(--line-n); }
+.scan-grade { display: grid; align-content: start; gap: 10px; padding: clamp(20px, 2.4vw, 36px); border-right: 1px solid var(--line-n); }
+.scan-kicker { display: flex; align-items: center; gap: 10px; font: 500 12px/1 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--mute-n); }
+.scan-kicker .lamp { margin: 0; font-size: 28px; opacity: .35; }
+.is-running .scan-kicker .lamp { opacity: 1; animation: scan-blink calc(var(--beat) * 2) steps(1) infinite; }
+@keyframes scan-blink { 50% { opacity: .25; } }
+.scan-letter { font: 1000 clamp(140px, 17vw, 280px)/.8 var(--display); font-stretch: 100%; letter-spacing: -.04em; color: var(--ink-n); margin-top: 12px; }
+.scan-letter[data-grade="D"], .scan-letter[data-grade="F"] { color: var(--red); }
+.is-idle .scan-letter { color: rgba(236, 232, 220, .16); }
+.scan-score { font: 500 15px/1.3 var(--mono); color: var(--mute-n); }
+.scan-score b { font: 900 28px/1 var(--display); font-stretch: 80%; color: var(--ink-n); }
+.scan-headline { font: 600 20px/1.3 var(--text); color: var(--ink-n); max-width: 18em; }
+
+.scan-run { display: grid; grid-template-rows: auto 1fr; min-width: 0; }
+.scan-meter { position: relative; display: flex; align-items: center; gap: 3px; height: clamp(90px, 14svh, 150px); padding: 0 clamp(16px, 2vw, 28px); border-bottom: 1px solid var(--line-n); overflow: hidden; }
+.scan-meter i { flex: 1; min-width: 2px; background: rgba(236, 232, 220, .16); transition: background .3s; }
+.scan-meter i.on { background: var(--ink-n); }
+.scan-head { position: absolute; top: 10px; bottom: 10px; width: 2px; margin-left: -1px; background: var(--red); transition: left .5s var(--ease); }
+.is-idle .scan-head { opacity: 0; }
+.scan-meter.running::after { content: ""; position: absolute; top: 0; bottom: 0; width: 22%; left: -22%; background: linear-gradient(90deg, transparent, rgba(255, 83, 9, .14), transparent); animation: scan-sweep 1.6s linear infinite; }
+@keyframes scan-sweep { to { left: 100%; } }
+
+.scan-log { padding: clamp(14px, 1.6vw, 22px) clamp(16px, 2vw, 28px); display: grid; gap: 2px; align-content: start; font: 400 14px/1.5 var(--mono); }
+.scan-log li { display: grid; grid-template-columns: 22px minmax(0, 1fr) auto; gap: 12px; padding: 7px 0; border-bottom: 1px solid var(--line-n); color: var(--ink-n); }
+.scan-log li:last-child { border-bottom: 0; }
+.scan-log .v-idle { color: rgba(236, 232, 220, .35); }
+.scan-mark { font-weight: 700; text-align: center; }
+.scan-state { color: var(--mute-n); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; align-self: center; }
+.scan-log .v-run .scan-mark::before { content: ""; display: inline-block; width: 8px; height: 8px; background: var(--red); animation: scan-blink .5s steps(1) infinite; }
+.scan-log .v-fix .scan-mark, .scan-log .v-fix .scan-state { color: var(--red); }
+.scan-log .v-review .scan-mark, .scan-log .v-review .scan-state { color: #FDB022; }
+.scan-log .v-ok .scan-mark { color: #7A9D8C; }
+
+.scan-results { margin-top: clamp(28px, 5svh, 48px); outline: 0; }
+.scan-filter { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 18px; }
+.scan-filter button { display: inline-flex; align-items: center; gap: 10px; min-height: 40px; padding: 0 14px; background: transparent; border: 0; box-shadow: inset 0 0 0 1px var(--line-n); color: var(--mute-n); font: 600 14px/1 var(--text); cursor: pointer; }
+.scan-filter button span { font: 500 12px/1 var(--mono); }
+.scan-filter button[aria-pressed="true"] { background: var(--ink-n); color: var(--night); box-shadow: none; }
+.scan-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 1px; background: var(--line-n); border: 1px solid var(--line-n); }
+.scan-card { display: grid; align-content: start; gap: 12px; padding: 22px; background: var(--night); }
+.scan-tag { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; font: 500 12px/1 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--mute-n); }
+.scan-chip { padding: 5px 8px; font: 700 11px/1 var(--mono); letter-spacing: .1em; }
+.v-fix .scan-chip { background: var(--red); color: var(--night); }
+.v-review .scan-chip { box-shadow: inset 0 0 0 1px #FDB022; color: #FDB022; }
+.v-unknown .scan-chip { box-shadow: inset 0 0 0 1px var(--rule-n); color: var(--mute-n); }
+.v-ok .scan-chip { background: rgba(122, 157, 140, .18); color: #9FC1B0; }
+.scan-saw { font: 400 13px/1.5 var(--mono); color: var(--ink-n); overflow-wrap: anywhere; }
+.scan-why, .scan-what { font: 400 15px/1.5 var(--text); color: var(--mute-n); }
+.scan-why b, .scan-what b { color: var(--ink-n); font-weight: 600; }
+.v-ok.scan-card { gap: 8px; }
+
+.scan-cta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 20px 40px; margin-top: 24px; padding: clamp(20px, 2.4vw, 32px); background: var(--night-2); }
+.scan-cta p { max-width: 40em; font: 600 clamp(18px, 1.6vw, 22px)/1.35 var(--text); }
+
+@media (max-width: 900px) {
+  .scan-copy { grid-template-columns: 1fr; }
+  .scan-board { grid-template-columns: 1fr; }
+  .scan-grade { border-right: 0; border-bottom: 1px solid var(--line-n); grid-template-columns: auto 1fr; align-items: end; }
+  .scan-kicker, .scan-headline { grid-column: 1 / -1; }
+  .scan-letter { font-size: 120px; }
+}
+@media (max-width: 767px) {
+  .scan-form { flex-wrap: wrap; }
+  .scan-pre { display: none; }
+  .scan-form .btn { width: 100%; margin-bottom: 12px; }
+  .scan-log li { grid-template-columns: 18px minmax(0, 1fr); }
+  .scan-state { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .scan-meter.running::after, .is-running .scan-kicker .lamp, .scan-log .v-run .scan-mark::before { animation: none; }
+}
