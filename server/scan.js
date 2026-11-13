@@ -8,7 +8,7 @@ import { lookup } from 'node:dns/promises';
 import net from 'node:net';
 
 const UA = 'ThreatOwlsScanner/1.0 (+https://www.threatowls.com; passive check requested by a site visitor)';
-const TIMEOUT = 8000;
+const TIMEOUT = 6000;
 
 export function cleanHost(input) {
   let h = String(input || '').trim().toLowerCase();

@@ -14,4 +14,4 @@
 
 The numbers shown in the graphics (312 assets, 4,812 findings…) are illustrative; replace them with real figures when you have them.
 
-Deploying: `npm run build` produces a static site in `dist/`. For the scanner's web checks, deploy `api/scan.js` as a serverless function at `/api/scan` (Vercel and Netlify both run it as is); without it, those checks report "Not enough data".
+Deploying on Vercel: import the GitHub repo at vercel.com/new; `vercel.json` sets everything (Vite build to `dist/`, the scanner function `api/scan.js` at `/api/scan`, and every other address served by the page). No environment variables are needed.
