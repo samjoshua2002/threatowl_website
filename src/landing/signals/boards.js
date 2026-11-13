@@ -4,7 +4,7 @@ import { brand } from '../../brand/brand.config.js';
 import { drawOwl } from '../../brand/owl.jsx';
 
 const C = {
-  bg: '#0F1115', panel: '#151820', ink: '#E7E9EE', mute: '#7D8594', faint: 'rgba(231,233,238,.08)', line: 'rgba(231,233,238,.14)',
+  bg: '#000000', panel: '#0C0D10', ink: '#E7E9EE', mute: '#7D8594', faint: 'rgba(231,233,238,.08)', line: 'rgba(231,233,238,.14)',
   accent: '#FF6A2B', amber: '#FDB022', green: '#47CD89', blue: '#84ADFF', purple: '#B692F6', red: '#F97066',
 };
 const TAU = Math.PI * 2;

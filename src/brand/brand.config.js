@@ -15,8 +15,8 @@ export const brand = {
   // Colours. These override the CSS custom properties of the landing (land.css) and the shop (site.css) at runtime,
   // and feed the canvas drawings (the bars, the playhead, the dot), which cannot read CSS.
   colors: {
-    night: '#070909',          // landing ground
-    night2: '#171714',
+    night: '#000000',          // landing ground
+    night2: '#0C0D10',
     inkOnNight: '#ECE8DC',     // text on night
     muteOnNight: '#9E9B90',
     paper: '#EBE8DF',          // Sheet chapter / prints ground
@@ -26,7 +26,7 @@ export const brand = {
     accentHover: '#FF7A3D',
     barEmpty: '#2A2924',       // bars before the media has loaded
     barTip: '236, 232, 220',   // r, g, b of the bars' white tips
-    dimNight: '7, 9, 9',    // r, g, b of the shade over the part of the track not played yet
+    dimNight: '0, 0, 0',    // r, g, b of the shade over the part of the track not played yet
   },
 
   // Typefaces, as declared by @font-face in src/styles/fonts.css (files in public/fonts).

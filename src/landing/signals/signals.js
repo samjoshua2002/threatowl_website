@@ -9,7 +9,7 @@ import { drawOwl } from '../../brand/owl.jsx';
 
 export const THEMES = {
   paper: { bg: '#EBE8DF', ink: '#15140F', mute: '#7A766C', line: 'rgba(21,20,15,.11)', c: ['#FF5309', '#3156D3', '#2F8F5B', '#C28A00', '#8E44AD', '#1B8A8A', '#15140F', '#D7263D'] },
-  night: { bg: '#0F1115', ink: '#E7E9EE', mute: '#7D8594', line: 'rgba(231,233,238,.09)', c: ['#FF6A2B', '#84ADFF', '#47CD89', '#FDB022', '#B692F6', '#5FD4D0', '#E7E9EE', '#F97066'] },
+  night: { bg: '#000000', ink: '#E7E9EE', mute: '#7D8594', line: 'rgba(231,233,238,.08)', c: ['#FF6A2B', '#84ADFF', '#47CD89', '#FDB022', '#B692F6', '#5FD4D0', '#E7E9EE', '#F97066'] },
 };
 export const STYLES = ['polygraph', 'timeline', 'ridge', 'disc', 'rings', 'heat', 'rays', 'lanes', 'path', 'mesh', 'hatch', 'spectrum', 'scope', 'gauge', 'radar', 'grid'];
 const CHANNELS = ['ACCESS', 'TOOL CALLS', 'DATA IN', 'DATA OUT', 'DENIED', 'DRIFT', 'DECOYS', 'RISK'];

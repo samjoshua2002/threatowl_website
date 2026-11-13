@@ -125,9 +125,9 @@ export class Engine {
   }
   drawWall(t) {
     const W = this.wall, n = this.cols() * this.rows();
-    W.ctx.fillStyle = brand.colors.night; W.ctx.fillRect(0, 0, W.canvas.width, W.canvas.height);
+    W.ctx.fillStyle = '#1A1C21'; W.ctx.fillRect(0, 0, W.canvas.width, W.canvas.height); // hairlines between the tiles
     for (let i = 0; i < n; i++) {
-      const c = WALL[i], col = i % this.cols(), row = Math.floor(i / this.cols()), g = 2;
+      const c = WALL[i], col = i % this.cols(), row = Math.floor(i / this.cols()), g = 1;
       drawSheet(W.ctx, col * W.size + g, row * W.size + g, W.size - g * 2, W.size - g * 2, { style: c.style, seed: c.seed, theme: 'night', title: c.title, code: c.code, sensor: c.style, t: t + i * 0.37, live: true });
     }
   }
